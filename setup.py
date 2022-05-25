@@ -11,7 +11,7 @@ readme = ""
 with open("README.md") as f:
     readme = f.read()
 
-extras_require = {"dev": ["black"]}
+extras_require = {"dev": ["black"], "docs": ["sphinx", "furo", "myst-parser"]}
 
 packages = ["sort_requirements_file"]
 
