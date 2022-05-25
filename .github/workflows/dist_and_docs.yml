@@ -1,11 +1,14 @@
-name: Build dists and install
+name: Build dists and docs
 
 on:
   push:
   pull_request:
 
+permissions: 
+  contents: write
+
 jobs:
-  dist:
+  dist-and-docs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -35,3 +38,16 @@ jobs:
       - name: Install package
         run: |
           pip install -e .[dev,docs]
+
+      - name: Build docs
+        shell: bash
+        run: |
+          cd docs
+          sphinx-build -b html --keep-going . _build/
+          cd ..
+
+      - name: Upload docs
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages
+          folder: docs/_build
