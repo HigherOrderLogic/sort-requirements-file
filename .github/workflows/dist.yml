@@ -1,0 +1,37 @@
+name: Build dists and install
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  dist:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [ '3.8', '3.x' ]
+
+    name: Build dist and install (${{ matrix.python-version }})
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Set up CPython ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+
+      - name: Build distributions
+        run: |
+          python ./setup.py sdist bdist_wheel
+
+      - name: Install package
+        run: |
+          python ./setup.py install
