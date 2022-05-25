@@ -11,10 +11,10 @@ def main() -> None:
     requirements = []
 
     with open(file_path, "r", encoding="utf8") as f:
-        requirements = [req.rstrip('\n') for req in f.readlines()]
-        
+        requirements = [req.rstrip("\n") for req in f.readlines()]
+
     with open(file_path, "w", encoding="utf8") as f:
-        f.write('\n'.join(sorted(requirements)))
+        f.write("\n".join(sorted(requirements)))
 
     print("Your requirements.txt file is formatted.")
 
