@@ -32,4 +32,4 @@ jobs:
       - name: Run black
         if: ${{ always() && steps.install-deps.outcome == 'success' }}
         run: |
-          black --check .
+          black --check --diff .
