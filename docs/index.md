@@ -6,7 +6,6 @@ hide-toc: true
 
 A CLI application used to sort your requirements file (`requirements.txt`, `poetry.toml`, ...).
 
-## Contents
 ```{toctree}
 ---
 hidden:
