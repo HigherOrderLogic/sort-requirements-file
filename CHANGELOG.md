@@ -2,11 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
-# [0.0.1]
+## [unreleased]
 
-(https://github.com/HigherOrderLogic/sort-requirements-file/tree/v0.0.1) - (2022-05-25)
+### 📝 Documentation
 
-## 📝 Documentation
+- Include changelog ([cb62164](https://github.com/HigherOrderLogic/sort-requirements-file/commit/cb621647e0d1b975581bb0f38d1a915df44cbc6b))
+
+
+## [0.0.1](https://github.com/HigherOrderLogic/sort-requirements-file/tree/v0.0.1) - (2022-05-25)
+
+### 📝 Documentation
 
 - Fix exceed text ([bfcc258](https://github.com/HigherOrderLogic/sort-requirements-file/commit/bfcc258193cc59d02461022efb1cc68100e49765))
 - Use sphinx.ext.githubpages ([f6da779](https://github.com/HigherOrderLogic/sort-requirements-file/commit/f6da779a5dc56aaeb6a1f8c66e80e9fef578541e))

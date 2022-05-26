@@ -6,20 +6,19 @@ All notable changes to this project will be documented in this file.\n
 """
 body = """
 {% if version %}\
-    # [{{ version | trim_start_matches(pat="v") }}]\
     {% if previous %}\
         {% if previous.version %}\
-            (https://github.com/HigherOrderLogic/sort-requirements-file/compare/{{ previous.version }}...{{ version }})\
+            ## [{{ version | trim_start_matches(pat="v") }}](https://github.com/HigherOrderLogic/sort-requirements-file/compare/{{ previous.version }}...{{ version }})\
         {% else %}
-            (https://github.com/HigherOrderLogic/sort-requirements-file/tree/{{ version }})\
+            ## [{{ version | trim_start_matches(pat="v") }}](https://github.com/HigherOrderLogic/sort-requirements-file/tree/{{ version }})\
         {% endif %}\
     {% endif %} \
     - ({{ timestamp | date(format="%Y-%m-%d") }})
 {% else %}\
-    # [unreleased]
+    ## [unreleased]
 {% endif %}\
 {% for group, commits in commits | group_by(attribute="group") %}
-    ## {{ group | upper_first }}
+    ### {{ group | upper_first }}
     {% for commit in commits %}
 		- {% if commit.scope %}\
 			**{{commit.scope}}:** \
