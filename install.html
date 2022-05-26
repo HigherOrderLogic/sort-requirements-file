@@ -159,6 +159,10 @@
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Install</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Meta</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Project Links</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference external" href="https://github.com/HigherOrderLogic/sort-requirements-file">GitHub</a></li>
@@ -196,13 +200,13 @@
         <article role="main">
           <section id="install">
 <h1>Install<a class="headerlink" href="#install" title="Permalink to this headline">#</a></h1>
-<p>There are many ways to install this package. Below are some example.</p>
+<p><strong>Note:</strong> This package requires Python 3.8 or later.</p>
+<p>There are many ways to install this package. Below are some examples.</p>
 <section id="install-using-pip-recommended">
 <h2>Install using pip (recommended).<a class="headerlink" href="#install-using-pip-recommended" title="Permalink to this headline">#</a></h2>
 <section id="requirements">
 <h3>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
-<li><p><a class="reference external" href="https://git-scm.com/downloads/"><code class="docutils literal notranslate"><span class="pre">git-scm</span></code></a></p></li>
 <li><p><a class="reference external" href="https://www.python.org/downloads/">Python</a> (&gt;=3.8)</p></li>
 <li><p><a class="reference external" href="https://pypi.org/project/pip/"><code class="docutils literal notranslate"><span class="pre">pip</span></code></a> (This should come with your Python distribution)</p></li>
 </ul>
@@ -211,7 +215,15 @@
 <h3>Steps<a class="headerlink" href="#steps" title="Permalink to this headline">#</a></h3>
 <ul>
 <li><p>Open the terminal.</p></li>
-<li><p>Then run this command to install the package.</p>
+<li><p>To install the package from PyPi, just run this command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Linux/macOS</span>
+python3 -m pip install -U sort-requirements-file
+<span class="c1"># Windows</span>
+py -3 -m pip install -U sort-requirements-file
+</pre></div>
+</div>
+</li>
+<li><p>If you want to install the development version, do the following (note that this required you to have <code class="docutils literal notranslate"><span class="pre">Git</span></code> installed in your machine):</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install git+https://github.com/HigherOrderLogic/sort-requirements-file
 </pre></div>
 </div>

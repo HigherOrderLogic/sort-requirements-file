@@ -19,6 +19,15 @@ usage
 ```{toctree}
 ---
 hidden:
+caption: Meta
+---
+
+changelog
+```
+
+```{toctree}
+---
+hidden:
 caption: Project Links
 ---
 
