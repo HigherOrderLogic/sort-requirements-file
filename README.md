@@ -4,6 +4,9 @@
   sort-requirements-file
 </h1>
 
+![License](https://img.shields.io/github/license/HigherOrderLogic/sort-requirements-file)
+![PyPI](https://img.shields.io/pypi/v/sort-requirements-file)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/sort-requirements-file)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 <br>
@@ -39,20 +42,22 @@ A CLI application used to sort your requirements file (`requirements.txt`, `poet
 <br>
 
 ## Install
-You can install this package by cloning this repository, then run the [`setup.py`](/setup.py) file, or by using `pip` (the recommened way).
-- Install using pip.
-  Open the terminal, then run this command.
-  ```cmd
-  pip install git+https://github.com/HigherOrderLogic/sort-requirements-file
-  ```
-- Install using `git`.
-  ```cmd
-  # Clone the repository
-  git clone https://github.com/HigherOrderLogic/sort-requirements-file.git
-  cd sort-requirements-file
-  # Install the package
-  python setup.py install
-  ```
+**Note:** Python 3.8 or higher is required.
+<br>
+
+To install the package, you just need to run the following command:
+```bash
+# Linux/macOS
+python3 -m pip install -U sort-requirements-file
+# Windows
+py -3 -m pip install -U sort-requirements-file
+```
+<br>
+
+If you want to install the development version, do the following (note that this required you to have `Git` installed in your machine):
+```bash
+pip install git+https://github.com/HigherOrderLogic/sort-requirements-file
+```
 
 ## Usage
 Open the terminal at where you requirements file is, the run `python -m sort_requirements_file`, and boom, your requirements file is sorted!
