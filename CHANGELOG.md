@@ -6,6 +6,8 @@ All notable changes to this project will be documented in this file.
 
 ### 📝 Documentation
 
+- Update installation method ([d059ac1](https://github.com/HigherOrderLogic/sort-requirements-file/commit/d059ac147ced8577061636df8fedc48192f159ce))
+- Improve changelog ([56f177d](https://github.com/HigherOrderLogic/sort-requirements-file/commit/56f177d4c4edd9efbc41d2dcdf95f4a03a326027))
 - Include changelog ([cb62164](https://github.com/HigherOrderLogic/sort-requirements-file/commit/cb621647e0d1b975581bb0f38d1a915df44cbc6b))
 
 
