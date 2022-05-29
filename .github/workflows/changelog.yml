@@ -1,6 +1,7 @@
 name: Auto update changelog
 
 on:
+  release:
   schedule:
     - cron: "0 0 * * 1"
   workflow_dispatch:
